@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+  <div class="maincont">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container">
+        <a class="navbar-brand" href="#"><b>RentACar</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Rent</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ride</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <p id="userid"></p><button id="logout">Logout</button>
+        </div>
+     
+      </div>
+    </nav>
+    <div class="home">
+      <div class="head1"><b> PREMIUM CAR <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRENTAL</b></div>
+      <div class="searbox">
+        
+        <div id="sear">
+          <div><b>Pickup & Return location </b><input type="text" placeholder="Address" id="inpss"></div>
+          <div><b>Start </b><input type="text" placeholder="Date , Time"></div>
+          <div><b>Stop</b><input type="text" placeholder="Date , Time"></div>
+          <ion-icon name="search" id="s"></ion-icon>
+        </div>
+      </div>
+      <div class="carimg">
+        <img src="images/carimg.png" alt="" id="carimg">
+      </div>
+    </div>
+  </div>
+      <div class="main">
+        <div class="containerr">
+        <header id="pick"><b> WIDE RANGE OF<br>&nbsp&nbsp&nbsp&nbsp VEHICLES</b></header>
+        <div class="cont1">
+            <div id="ccar1" class="car1" onclick="rloginform()">
+                <img src="images/car1.jpeg" alt="" id="car1">
+                <div id="ncar">
+                  <h4><b>CARS</b></h4>
+                  <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                </div>
+            </div>
+            <div id="ccar1" class="car2">
+                <img src="images/car2.jpeg" alt="" id="car1">
+                <div id="ncar">
+                  <h4><b>SUVS</b></h4>
+                  <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="cont2">
+            <div id="ccar1" class="car3">
+                <img src="images/car3.jpeg" alt="" id="car1">
+              
+                <div id="ncar">
+                  <h4><b>VANS</b></h4>
+                  <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                </div>
+            </div>
+            <div id="ccar1" class="car4">
+                <img src="images/car4.jpeg" alt="" id="car1">
+                
+                <div id="ncar">
+                  <h4><b>ELECTRIC</b></h4>
+                  <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="cont3">
+            <div>
+              <span id="find"><b>FIND CAR IN YOUR LOCATIONS</b></span>
+              <p id="dis">
+                Discover the perfect vehicle tailored to your needs, wherever you are. Our Find Car in Your Locations' feature allows you to effortlessly search and select from our premium fleet available near you. Whether you're looking for a luxury sedan, a spacious SUV, or a sporty convertible, our easy-to- use tool ensures you find the ideal car for your joumey. Simply enter your location, and let us connect you with top-tier vehicles ready for rental
+              </p> 
+                <button id="findl">Find a Location</button>
+            </div>
+            <div><img src="images/location.jpeg" alt="" id="location"></div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="main2">
+      <div class="container3">
+          <header id="pick"><B> PICK YOUR DREAM <br>&nbsp&nbsp&nbsp&nbsp CAR TODAY</B></header>
+          <div class="swiper">
+   
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" id="a">
+                  <img src="images/car5.jpeg" alt="" id="slideimg">
+                </div>
+                <div class="swiper-slide" id="b">
+                  <img src="images/car6.jpeg" alt="" id="slideimg">
+                </div>
+                <div class="swiper-slide" id="c">
+                  <img src="images/car7.jpeg" alt="" id="slideimg">
+                </div>
+                <div class="swiper-slide" id="c">
+                  <img src="images/car8.jpeg" alt="" id="slideimg">
+                </div>
+                <div class="swiper-slide" id="c">
+                  <img src="images/car9.jpeg" alt="" id="slideimg">
+                </div>
+              </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+      </div>
+    </div>
+    <div class="spg">
+    <header id="pick"><b>STORIES BEHIND <br>&nbsp&nbsp&nbsp&nbsp THE WHEEL</b></header>
+    <div class="cardss">
+    <div class="cards" id="carda1">
+      <div class="card1">
+        <h3>04</h3>
+        <div>
+          <h6>March</h6>
+          <h6>2024</h6>
+        </div>
+      </div>
+      <h4>Luxury and Comfort: Experiences</h4>
+      <p>Join us as we dive into the exhilarating stories of travelers who embarked on unforgettable journeys with PREMIUM CAR RENTAL.</p>
+      <img src="images/card1.jpeg" alt="">
+    </div>
+
+    <div class="cards" id="carda2">
+      <div class="card1">
+        <h3>18</h3>
+        <div>
+          <h6>June</h6>
+          <h6>2024</h6>
+        </div>
+      </div>
+      <h4>Cars that Adapt to your Lifestyle</h4>
+      <p>Join us as we dive into the exhilarating stories of travelers who embarked on unforgettable journeys with PREMIUM CAR RENTAL.</p>
+      <img src="images/card2.jpeg" alt="">
+    </div>
+
+    <div class="cards" id="carda3">
+      <div class="card1">
+        <h3>12</h3>
+        <div>
+          <h6>January</h6>
+          <h6>2024</h6>
+        </div>
+      </div>
+      <h4>Adventures on the Open Road</h4>
+      <p>Join us as we dive into the exhilarating stories of travelers who embarked on unforgettable journeys with PREMIUM CAR RENTAL.</p>
+      <img src="images/card3.jpeg" alt="">
+    </div>
+  </div>
+  </div>
+    <div class="blank">
+      <div class="logoimg">
+      <img src="images/landrover.png" alt="" id="logo">
+      <img src="images/bmw.png" alt="" id="logo">
+      <img src="images/fer.png" alt="" id="logo">
+      <img src="images/honda.png" alt="" id="logo">
+      <img src="images/jaguar.png" alt="" id="logo">
+      <img src="images/mer.png" alt="" id="logo">
+      <img src="images/nissan.png" alt="" id="logo">
+      <img src="images/porsche.png" alt="" id="logo">
+    </div>
+
+    </div>
+  <div class="Pre">
+      <div class="pcr">
+        <div>
+          <h1 id="precr"><b>PREMIUM CAR <br> RENTAL</b></h1><br>
+          <img src="images/google.jpeg" alt="" id="gio">
+          <img src="images/ios.jpeg" alt="" id="gio">
+        </div>
+        <div>
+          <img src="images/phn.jpeg" alt="" id="phn">
+        </div>
+      </div>
+      <div class="stay">
+        <h1 id="stay"><b>STAY UP TO DATE ON <br>ALL THE LATEST <br> NEWS.</b></h1>
+        <div style="display: flex;gap: 10px;">
+        <input type="email" placeholder="Your email">
+        <div id="icon"><ion-icon name="paper-plane-sharp" ></ion-icon></div>
+        </div>
+      </div>
+
+      <div class="res">
+        <table>
+          <tr>
+            <th>RESOURCES</th>
+            <th>COMPANY</th>
+            <th>PRODUCT</th>
+            <th>FOLLOW US</th>
+          </tr>
+          <tr>
+            <td>Installation Manual</td>
+            <td>About us</td>
+            <td>Demo</td>
+            <td><ion-icon name="logo-facebook"></ion-icon>&nbsp&nbsp&nbsp<ion-icon name="logo-twitter"></ion-icon>&nbsp&nbsp&nbsp<ion-icon name="logo-linkedin"></ion-icon></td>
+          </tr>
+          <tr>
+            <td>Release Note</td>
+            <td>Career</td>
+            <td>Security</td>
+          </tr>
+          <tr>
+            <td>Community Help</td>
+            <td>Press</td>
+            <td>FAQ</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Support</td>
+            <td>Features</td>
+          </tr>
+        </table>
+      </div>
+  </div>
+
+
+
+<div class="carspage" >
+  <div class="card" style="width: 18rem;">
+    <img src="car1.jpeg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+</div>
+
+
+<script></script>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="index.js" type="module"></script>
+</body>
+</html>

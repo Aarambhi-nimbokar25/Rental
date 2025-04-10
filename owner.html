@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="owner.css">
+</head>
+<body>
+    
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Create Account</h1>
+			<input type="text" id="oemail" placeholder="Enter Email:">
+            <input type="password" id="opwd" placeholder="Enter Password: ">
+            <input type="text" id="oname" placeholder="Enter Name:">
+            <input type="text" id="oaddress" placeholder="Enter Address:"> 
+            <input type="text" id="omob" placeholder="Enter phone no:">
+            <input type="text" id="oage" placeholder="Enter age:">
+            <input type="text" id="ocarid" placeholder="Enter Car RegNo:"> 
+            <input type="text" id="omodel" placeholder="Enter Car Model:">
+			<button id="osignup">Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Sign in</h1>
+			<input type="email" placeholder="Email"  id="email2"/>
+			<input type="password" placeholder="Password" id="password2"/>
+			<a href="#">Forgot your password?</a>
+			<button id="ologin">Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+				<img src="images/spcar.png" alt="" id="spcar">
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+				<img src="images/spcar.png" alt="" id="spcar">
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+</script>
+
+<script src="owner.js" type="module"></script>
+</body>
+</html>
